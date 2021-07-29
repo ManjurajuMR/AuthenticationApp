@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_grd"
+    tools:context=".ui.signin_signout.SigninFragment">
+
+    <LinearLayout
+        android:id="@+id/signinfrag_mob"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="43dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true">
+   <EditText
+       android:id="@+id/signin_mobileNo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="@string/mobileNum"
+       android:inputType="phone"
+       android:maxLength="10"
+       android:textSize="16dp"
+       android:fontFamily="sans-serif-medium"
+       android:textFontWeight="600"
+       android:letterSpacing="0"
+       android:lineHeight="22px"
+       android:background="@null"
+       android:layout_marginTop="17dp"
+       android:layout_marginBottom="15dp"
+       android:layout_marginLeft="22dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signinfrag_pw"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/white"
+        android:layout_below="@+id/signinfrag_mob"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/signin_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Mpin"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:textFontWeight="600"
+            android:letterSpacing="0"
+            android:lineHeight="22px"
+            android:background="@null"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="22dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eye_on"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginRight="16dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgotpassword"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_below="@+id/signinfrag_pw"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="187dp"/>
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:backgroundTint="@color/white"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:text="SIGN IN"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#0E85FF"
+        android:layout_below="@+id/forgot_password"
+        android:layout_marginTop="39dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="170dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp">
+        <ImageView
+            android:id="@+id/fingerprint_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fingerprinticon"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_below="@+id/fingerprint_icon"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_your_fp"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/fingerprint_icon"
+            android:layout_toRightOf="@+id/text"
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

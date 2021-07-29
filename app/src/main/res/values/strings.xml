@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AuthenticationApp</string>
+
+    <string name="mobileNum">Mobile Number</string>
+    <string name="Mpin">MPin</string>
+    <string name="forgotpassword">Forgot your password?</string>
+    <string name="use_your_fp">USE YOUR FINGERPRINT TO LOGIN</string>
+    <string name="entermobileNum">Enter Mobile Number</string>
+    <string name="enterMpin">Enter 4 digit MPin</string>
+    <string name="reenterMpin">Re-Enter 4 digit MPin</string>
+</resources>

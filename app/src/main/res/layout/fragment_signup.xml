@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_grd"
+    tools:context=".ui.signin_signout.SignupFragment">
+
+    <LinearLayout
+        android:id="@+id/signupfrag_mob"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="43dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/signup_mobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/entermobileNum"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:textFontWeight="600"
+            android:letterSpacing="0"
+            android:lineHeight="22px"
+            android:background="@null"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="22dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signupfrag_pw"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/white"
+        android:layout_below="@+id/signupfrag_mob"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enterMpin"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:textFontWeight="600"
+            android:letterSpacing="0"
+            android:lineHeight="22px"
+            android:background="@null"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="22dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signupfrag_repw"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_below="@+id/signupfrag_pw"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/signup_repassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/reenterMpin"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:textFontWeight="600"
+            android:letterSpacing="0"
+            android:lineHeight="22px"
+            android:background="@null"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="22dp"/>
+
+        <ImageView
+            android:id="@+id/eyebtn_tosee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eye_on"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="16dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:backgroundTint="@color/white"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:text="SIGN IN"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#0E85FF"
+        android:layout_below="@+id/signupfrag_repw"
+        android:layout_marginTop="47dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="170dp"/>
+
+
+</RelativeLayout>
